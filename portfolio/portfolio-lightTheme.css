@@ -1,24 +1,36 @@
+:root{
+  --base-color: #E7E7E7;
+  --text-color: #3D3D3D;
+  --secondary-base-color:#ffff;
+}
+
+.dark-theme{
+   --base-color: #0C151D;
+  --text-color: #A3ABB2;
+  --secondary-base-color:#171F26;
+}
+
 body{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #E7E7E7;
-  color: #3D3D3D;
+  background-color: var(--base-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#icon{
+#icon-container{
   height: 80px;
   width: 80px;
   border-radius: 50%;
   border: none;
-  background-color: #ffff;
+  background-color: var(--secondary-base-color);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#icon-in{
+#icon{
   height: 40px;
   width: 40px;
 }
@@ -33,19 +45,25 @@ body{
 #profile-pic{
   height: 215px;
   width: 215px;
-
+  border-radius: 50%;
+  border: 2px solid #FBD144;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
 }
 
 #img{
-  max-width: 100%; 
-  height:auto;
+  max-width: 90%; 
+  height: 90%;
   border-radius: 50%;
 }
 
 #profile-right{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 
 #profile-right-name{
@@ -76,12 +94,15 @@ body{
 
 #text-box1{
   height: 102px;
-  width: 125px;
+  width: 148px;
+}
+p{
+  margin: 0;
 }
 
 #text-box2{
   height: 102px;
-  width: 148px;
+  width: 125px;
 }
 
 #text-box3{
@@ -105,7 +126,7 @@ body{
   height: 80px;
   width: 290px;
   font-size: 22px;
-  color: #3D3D3D;
+  cursor: pointer;
   border-radius: 10px;
   border: none;
   display: flex;
@@ -115,21 +136,25 @@ body{
 
 #download{
   background-color: #FBD144;
+  color: #3D3D3D ;
 }
 
 #contact{
-  background-color: #ffff;
+  background-color: var(--secondary-base-color);
+  color: var(--text-color);
 }
 
 #section4{
   height: 110px;
   width: 760px;
-  background-color: #ffff;
+  background-color:var(--secondary-base-color);
   border-radius: 20px;
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 #section4-left{
@@ -139,7 +164,9 @@ body{
   border-radius: 20px;
   margin-left: 20px;
   font-size: 22px;
-  color: #19191B
+  color: var(--text-color);
+  background-color: var(--base-color);
+  cursor: pointer;
 }
 
 #section4-right{
@@ -147,7 +174,7 @@ body{
   display: flex;
   justify-content: center;
   font-size: 22px;
-  color: #19191B
+  
 }
 
 #section5{
@@ -168,8 +195,14 @@ body{
 .section5-box{
   height: 226px;
   width: 362px;
-  
+  border-radius: 15px;
 }
+
+.section5-box:hover{
+  opacity: .3;
+}
+
+
 
 #footer{
   height: 33px;
@@ -177,3 +210,4 @@ body{
   text-align: center;
   font-size: 22px;
 }
+
