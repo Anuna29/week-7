@@ -35,10 +35,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#icon {
-  height: 40px;
-  width: 40px;
-}
+
 #icon-container:hover {
   opacity: 0.8;
 }
@@ -128,7 +125,6 @@ p {
   width: 618px;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
 }
 
 .button {
@@ -158,7 +154,6 @@ p {
   width: 760px;
   background-color: var(--secondary-base-color);
   border-radius: 20px;
-  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,9 +175,9 @@ p {
 
 #section4-right {
   width: 384.39px;
+  font-size: 22px;
   display: flex;
   justify-content: center;
-  font-size: 22px;
 }
 
 #section5 {
@@ -191,8 +186,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 #section5-row {
@@ -281,5 +274,57 @@ p {
     align-items: center;
     gap: 90px;
     margin-top: 40px;
+  }
+  #section3 {
+    height: 44px;
+    width: 375px;
+  }
+  .button {
+    height: 44px;
+    width: 158px;
+    font-size: 12px;
+  }
+  #download-svg {
+    width: 16px;
+    height: 14px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  #section4 {
+    height: 84px;
+    width: 375px;
+  }
+  #section4-left {
+    height: 50.3px;
+    width: 154px;
+    font-size: 14px;
+  }
+  #section4-right {
+    width: 154px;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  #section5 {
+    height: 1430px;
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #section5-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+  }
+
+  .section5-img {
+    height: 210px;
+    width: 340px;
+  }
+  .section5-box {
+    height: 210px;
+    width: 340px;
   }
 }
