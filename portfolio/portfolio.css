@@ -71,6 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 }
 
 #profile-right-name {
@@ -254,6 +255,8 @@ p {
 @media only screen and (max-width: 620px) {
   body {
     width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
