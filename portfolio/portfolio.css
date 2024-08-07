@@ -86,6 +86,7 @@ body {
 
 #profile-right-icon {
   display: flex;
+  align-items: center;
   gap: 26px;
 }
 
